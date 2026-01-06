@@ -2,7 +2,7 @@ name: 🐛 General Bug Report
 description: Report a development bug or a bug on existing feature for tracking.
 
 # define the title and assign the default lables, periodically review
-title: "[🐛 Bug]: "
+title: "[Bug]: "
 labels: ["issue/t/bug", "issue/triage"]
 
 body:
