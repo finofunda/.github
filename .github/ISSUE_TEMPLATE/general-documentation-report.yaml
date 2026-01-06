@@ -8,8 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        🌟 Thank you for taking your time ⌛ to review or awesome existing documents!
-        Please describe ✍ the changes/enhancements to the existing documents or request for a new one.
+        🌟 Thank you for taking your time ⌛ to review or update the awesome existing documents!
         Use this form, open a PR to documentation which are minor and/or does not alter core concepts.
   
   - type: textarea
