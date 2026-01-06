@@ -1,0 +1,60 @@
+name: 🐛 General Bug Report
+description: Report a development bug or a bug on existing feature for tracking.
+
+# define the title and assign the default lables, periodically review
+title: "[🐛 Bug]: "
+labels: ["issue/t/bug", "issue/triage"]
+
+body:
+  # provide brief description about the issue template
+  - type: markdown
+    attributes:
+      value: |
+        🌟 Thank you for taking your time ⌛ to file the 🐛 **bug report**. This template is generated using issue forms.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Please elaborate the bug, and also include *steps to reproduce*, *expected behaviour* and *solutions* (if any).
+      placeholder: Tell us what you see!
+      value: |
+        <div align = "justify">
+        
+        A bug happened! Elaborate more on the issue.
+
+        </div>
+    validations:
+      required: true
+
+  - type: textarea
+    id: systemconfiguration
+    attributes:
+      label: Relevant System Configuration
+      description: Please copy paste relevant system information, package version, etc.
+  
+  - type: checkboxes
+    id: versioncheck
+    attributes:
+      label: Affected Code Version
+      description: |
+        A bug report should only be for the latest version of the code.
+      options:
+        - label: By submitting this bug, you accept that the bug is present in the latest version.
+          required: true
+  
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
