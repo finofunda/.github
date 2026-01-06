@@ -1,0 +1,41 @@
+name: 📜 Documentation Changes and Review
+description: Report changes/addition/imporvement of documentation.
+
+title: "[📜 Docs]: "
+labels: ["issue/t/docs", "issue/triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🌟 Thank you for taking your time ⌛ to review or awesome existing documents!
+        Please describe ✍ the changes/enhancements to the existing documents or request for a new one.
+        Use this form, open a PR to documentation which are minor and/or does not alter core concepts.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the new documentation changes and review?
+      description: Please elaborate the requirement. Also, mark/suggest solutions.
+      placeholder: Tell us why it is required.
+      value: |
+        <div align = "justify">
+        
+        Documentation is a serious business and is of utmost importance. If you expect a minor change, then you can
+        directly open a PR without creating an issue, for example:
+          - spelling/typo mistake (does not alter the original text context),
+          - or, a grammatical error in the documentation,
+          - or, minor changes/language correction in function documentations, etc.
+
+        </div>
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
